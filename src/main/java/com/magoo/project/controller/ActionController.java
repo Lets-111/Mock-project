@@ -15,5 +15,10 @@ public class ActionController {
 		List<String> list=Arrays.asList("Harry","Lets think","Barbie ride");
 		return list;
 	}
+	
+	@RequestMapping(method=RequestMethod.POST ,path="/api/v1/postBook")p
+	{
+		System.out.println("This is for just adding new book");
+	}
 
 }
