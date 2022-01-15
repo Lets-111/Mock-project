@@ -24,4 +24,10 @@ public class ActionController {
 		return "XYZ";
 	}
 
+	@RequestMapping("/api/v1/getAuthor")
+	public String getAuthorName()
+	{
+		System.out.println("Author name is Dipanshu Magoo");
+		return "Dipanshu";
+	}
 }
