@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -16,9 +17,11 @@ public class ActionController {
 		return list;
 	}
 	
-	@RequestMapping(method=RequestMethod.POST ,path="/api/v1/postBook")p
+	@RequestMapping(method=RequestMethod.POST ,path="/api/v1/postBook")
+	public String hello()
 	{
 		System.out.println("This is for just adding new book");
+		return "XYZ";
 	}
 
 }
